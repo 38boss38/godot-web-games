@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" type="image/png" href="./first-2d-game/index.icon.png">
+  <title>Lickba 的网页游戏</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, "Microsoft YaHei", sans-serif;
+      background: #0f0e1e;
+      color: #f4f3ff;
+    }
+
+    body {
+      box-sizing: border-box;
+      display: grid;
+      min-height: 100vh;
+      margin: 0;
+      padding: 2rem;
+      place-items: center;
+    }
+
+    main {
+      width: min(36rem, 100%);
+      padding: 2rem;
+      border: 1px solid #383653;
+      border-radius: 1.25rem;
+      background: #19172b;
+      box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 35%);
+    }
+
+    p {
+      color: #bbb8d0;
+      line-height: 1.7;
+    }
+
+    a {
+      display: inline-flex;
+      margin-top: 1rem;
+      padding: 0.8rem 1.1rem;
+      border-radius: 999px;
+      background: #7a6cff;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #d9d4ff;
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p>GODOT WEB GAME</p>
+    <h1>Lickba 的网页游戏</h1>
+    <p>这里是与个人网站分离的游戏运行时发布仓库。游戏只会在玩家主动进入试玩页面后加载。</p>
+    <a href="./first-2d-game/">试玩《第一个 2D 游戏》</a>
+  </main>
+</body>
+</html>

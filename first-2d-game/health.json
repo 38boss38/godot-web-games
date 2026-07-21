@@ -1,0 +1,7 @@
+{
+  "status": "ok",
+  "slug": "first-2d-game",
+  "engine": "Godot 4.7",
+  "threads": false,
+  "entry": "index.html"
+}
