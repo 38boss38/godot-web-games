@@ -14,6 +14,13 @@
 - GitHub Pages 对 WASM 等资源进行动态 gzip；仓库保留原始文件，由浏览器透明接收并解压压缩响应。
 - Hugo 主站只保存游戏元数据、封面和此仓库的试玩地址，不复制大型运行时。
 
+## Cloudflare Pages 测试线路
+
+- `main` 分支继续供 GitHub Pages 使用，保留原有发布内容。
+- `cloudflare-pages` 分支供 Cloudflare Pages 使用，发布裁切版 Godot 4.7 Web 模板导出。
+- Cloudflare Pages 项目使用仓库根目录作为静态输出目录，不运行额外构建命令。
+- 首个裁切版将 `first-2d-game/index.wasm` 从 39,509,339 字节降至 22,977,963 字节，以满足单文件 25 MiB 的部署限制。
+
 ## 目录结构
 
 ```text
@@ -25,4 +32,3 @@
     ├── index.wasm
     └── index.pck
 ```
-
